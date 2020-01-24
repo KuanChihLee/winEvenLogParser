@@ -1,0 +1,22 @@
+./ -- LogParser.py
+   -- Documents.txt
+   -- Qrcode.ico
+   -- errorCode/
+      -- errorCode.xlsx
+      -- Table.json
+   -- logs/
+      -- EventLog.evtx
+
+For LogParser.py
+    pip install wxPython
+    pip install elementpath
+    pip install qrcode[pil]
+    pip install pyinstaller
+
+Run,
+python LogParser.py
+
+It will create a window and QRcode picture stored in ./QRcode
+
+Or build an app and the exe file is in ./,
+Use command "pyinstaller.exe --onefile --windowed --specpath "./spec" --distpath "./" --clean -n QRgenerator <pyscript name>"
